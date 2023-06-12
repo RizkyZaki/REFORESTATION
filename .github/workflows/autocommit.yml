@@ -20,7 +20,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --local user.email "ifsry416@gmail.com"
-          git config --local user.name "RizkyZaki"
+          git config --local user.name "Zach"
           git add -A
           git commit -m "Updated"
       - name: Push Back
