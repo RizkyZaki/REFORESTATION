@@ -13,6 +13,8 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - name: Configure Git
+        run: git config --global --add safe.directory /github/workspace
       - name: Modify LAST_UPDATED file
         run: |
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
